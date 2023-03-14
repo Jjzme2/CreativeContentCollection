@@ -1,0 +1,8 @@
+{
+    "name":"FrameworkBackend",
+    "web":{
+        "rewrites":{
+            "enable":true
+        }
+    }
+}
