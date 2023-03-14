@@ -5,9 +5,11 @@ WEB-INF
 
 # Engines + Database + CBFS + Secrets
 .env
+.env.example
 .engine/**
 .db/**
 .cbfs/**
+.vscode/**
 
 # logs + tests
 logs/**
@@ -22,4 +24,6 @@ yarn-error.log
 coldbox/*
 testbox/*
 modules/*
+modules_app/*
+resources
 modules/**/apidocs/**

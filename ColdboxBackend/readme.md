@@ -1,105 +1,66 @@
-# REST Template
+<style>
+.page-title
+{
+	color: gold;
+	font-size: 45px;
+	text-align: center;
+}
 
-This template gives you the base for building RESTFul web services with ColdBox.  Check out the `handlers` folder to see how to leverage our base event handler component for RESTFul routing, consistency and marshalling.
+.title
+{
+	border-top: 1px 1px solid black;
+	border-bottom: 5px dotted black;
+	color: green;
+	font-size: 30px;
+	text-align: center;
+}
 
-In the `models` folder you will find our Universal REST Response object that can be leveraged as your base for building RESTFul services.
+.sub-title
+{
+	border-bottom: 1px dashed black;
+	color: darkblue;
+	font-size: 18px;
+}
 
-## Implicit Methods
+.tri-title
+{
+	border-bottom: 1px solid black;
+	color: hotpink;
+	font-size: 15px;
+	padding-left: 30px;
+}
 
-The base handler implements an around handler approach to provide consistency and the following actions:
+.ticket-number 
+{
+	color: darkgray;
+	font-size: 35px;
+	text-align: center;
+}
 
-- `onError` - Fires whenever there is a runtime exception in any action
-- `onInvalidHTTPMethod` - Fires on invalid HTTP method access
-- `onMissingAction` - Fires on invalid missing actions on handlers
+a
+{
+	text-decoration: none;
+}
 
-## Utility Functions
+.code
+{
+	background-color: midnightblue;
+	color: lime;
+	font-family: monospace;
+}
+</style>
 
-We also give you some utility functions for RESTFul building:
-
-- `onInvalidRoute` - Can be used to fire of route not founds via 404
-- `onExpectationFailed` - Can be called when an expectation of a request fails, like invalid parameters/headers etc.
-- `onAuthorizationFailure` - Can be called to send a NOT Authorized status code and message.
-
-## HTTP Security
-
-By default the base handlers leverages ColdBox method security via the `this.allowedMethods` structure:
-
+<!--
+# PAGETITLE{ class="page-title" }
+## TITLE { class="title" }
+### SUBTITLE { class="sub-title" }
+### TRITITLE { class="tri-title" }
+Sample_Ticket_11111{ class="ticket-number" }
+``` { class="code" }
+Sample Code
 ```
-this.allowedMethods = {
-    "index"     : METHODS.GET,
-    "get"       : METHODS.GET,
-    "list"      : METHODS.GET,
-    "update"    : METHODS.PUT & "," & METHODS.PATCH,
-    "delete"    : METHODS.DELETE
-};
-```
+-->
 
-## HTTP Methods
+# Creative Content Collection{ class="page-title" }
 
-The base handler contains a static construct called `METHODS` that implements basic HTTP Methods that you can use for messages and allowed methods.
-
-```
-METHODS = {
-    "HEAD"      : "HEAD",
-    "GET"       : "GET",
-    "POST"      : "POST",
-    "PATCH"     : "PATCH",
-    "PUT"       : "PUT",
-    "DELETE"    : "DELETE"
-};
-```
-
-## Status Codes
-
-The base handler contains a static construct called `STATUS` that implements basic HTTP status codes you can use:
-
-```
-STATUS = {
-    "CREATED"               : 201,
-    "ACCEPTED"              : 202,
-    "SUCCESS"               : 200,
-    "NO_CONTENT"            : 204,
-    "RESET"                 : 205,
-    "PARTIAL_CONTENT"       : 206,
-    "BAD_REQUEST"           : 400,
-    "NOT_AUTHORIZED"        : 401,
-    "NOT_FOUND"             : 404,
-    "NOT_ALLOWED"           : 405,
-    "NOT_ACCEPTABLE"        : 406,
-    "TOO_MANY_REQUESTS"     : 429,
-    "EXPECTATION_FAILED"    : 417,
-    "INTERNAL_ERROR"        : 500,
-    "NOT_IMPLEMENTED"       : 501
-};
-```
-
-## License
-
-Apache License, Version 2.0.
-
-## Important Links
-
-- Source Code https://github.com/coldbox-templates/rest
-
-## Quick Installation
-
-Each application templates contains a `box.json` so it can leverage [CommandBox](http://www.ortussolutions.com/products/commandbox) for its dependencies.  
-Just go into each template directory and type:
-
-```
-box install
-```
-
-This will setup all the needed dependencies for each application template.  You can then type:
-
-```
-box server start
-```
-
-And run the application.
-
----
- 
-### THE DAILY BREAD
-
- > "I am the way, and the truth, and the life; no one comes to the Father, but by me (JESUS)" Jn 14:1-12
+<!--LINKS START-->
